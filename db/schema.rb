@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_27_152556) do
+ActiveRecord::Schema.define(version: 2018_10_27_170854) do
 
   create_table "carpools", force: :cascade do |t|
     t.string "name"
@@ -39,6 +39,11 @@ ActiveRecord::Schema.define(version: 2018_10_27_152556) do
     t.integer "carpool_id_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "provider"
+    t.string "uid"
+    t.string "name"
+    t.string "oauth_token"
+    t.datetime "oauth_expires_at"
     t.index ["car_id_id"], name: "index_users_on_car_id_id"
     t.index ["carpool_id_id"], name: "index_users_on_carpool_id_id"
   end
