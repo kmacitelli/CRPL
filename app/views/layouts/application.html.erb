@@ -41,7 +41,10 @@
             <a class="nav-link" href="#">My Pools</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/1<%= /* current_user.user_id */ %>/edit">Settings</a>
+            <% if current_user %>
+              <a class="nav-link" href="/<%= current_user.id %>/edit">Settings</a>
+            <% else %>
+            <% end %>
           </li>
         </ul>
       </div>
