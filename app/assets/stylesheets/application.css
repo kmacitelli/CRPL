@@ -31,7 +31,8 @@
     display: inline;
 }
 
-.loginHalf form input
+#signInToGoogle
 {
-    display: block;
+    text-align: right;
+    margin-right: 5px;
 }

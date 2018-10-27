@@ -24,34 +24,18 @@
   </head>
 
   <body>
-    <div>
-      <% if current_user %>
-        Signed in as <strong><%= current_user.name %></strong>!
-        <%= link_to "Sign out", signout_path, id: "sign_out" %>
-      <% else %>
-        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
-      <% end %>
-    </div>    
 
-    <div class="centeredContainer" id="loginContainer">
 
-      <h4>Log In</h4>
-      <div class="loginHalf">
-        Username: <br> Password:
+    <div class="signInCustomContainer">
+      <div id="signInToGoogle">
+        <% if current_user %>
+          Signed in as <strong><%= current_user.name %></strong>!
+          <%= link_to "Sign out", signout_path, id: "sign_out" %>
+        <% else %>
+          <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+        <% end %>
       </div>
-
-      <div class="loginHalf">
-        <form>
-          <input type="text">
-          <input type="password">
-        </form>
-      </div>
-      
-
-    </div>
-
-    <div class="centeredContainer" id="signUpContainer">
-    
+    </div>     
     
   </body>
 
