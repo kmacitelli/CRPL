@@ -9,10 +9,12 @@
     
     <div class="pageContainer">
 
+        <div>
+
         <!-- First name -->
         <div class="singleSettingContainer">
 
-            <p>Current First Name: </p>
+            <p>Current First Name: <% current_user.fname %> </p>
             <form>
 
                 <input type="text">
@@ -25,7 +27,7 @@
         <!-- Last name  -->
         <div class="singleSettingContainer">
 
-            <p>Current Last Name: </p>
+            <p>Current Last Name: <% current_user.lname %> </p>
             <form>
 
                 <input type="text">
@@ -38,7 +40,7 @@
         <!-- Home Address -->
         <div class="singleSettingContainer">
 
-            <p>Current Default Home Address: Placeholder</p>
+            <p>Current Default Home Address: <% current_user.homeAdr %> </p>
             <form>
 
                 <input type="text">
@@ -48,10 +50,10 @@
 
         </div>
 
-        <!-- First name -->
+        <!-- Target Address -->
         <div class="singleSettingContainer">
 
-            <p>Current Default Destination: Placeholder</p>
+            <p>Current Default Destination: <% current_user.destAdr %> </p>
             <form>
 
                 <input type="text">
@@ -64,7 +66,7 @@
         <!-- Max Distance -->
         <div class="singleSettingContainer">
 
-            <p>Current Maximum Distance Away: Placeholder Miles</p>
+            <p>Current Maximum Distance Away: <% current_user.maxDist %> Miles</p>
             <form>
 
                 <input type="text">
@@ -77,12 +79,12 @@
         <!-- Car Model -->
         <div class="singleSettingContainer">
 
-            <p>Current Car Model: Placeholder</p>
+            <p>Current Car Model: <% current_user.car_id_id %> </p>
             <form>
 
                 <input type="text">
                 <button type="button">Submit</button>
-
+s
             </form>
 
         </div>
@@ -90,7 +92,7 @@
         <!-- Car Seats -->
         <div class="singleSettingContainer">
 
-            <p>Current # of Car Seats: Placeholder</p>
+            <p>Current # of Car Seats: <% current_user.car_id_id %> </p>
             <form>
 
                 <input type="text">
