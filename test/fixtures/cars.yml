@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  model: MyString
+  user_id: one
+  carpool_id: one
+
+two:
+  color: MyString
+  model: MyString
+  user_id: two
+  carpool_id: two

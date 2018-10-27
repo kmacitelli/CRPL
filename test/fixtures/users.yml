@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fname: MyString
+  lname: MyString
+  homeAdr: MyString
+  destAdr: MyString
+  maxDist: 1
+  car_id: one
+  carpool_id: one
+
+two:
+  fname: MyString
+  lname: MyString
+  homeAdr: MyString
+  destAdr: MyString
+  maxDist: 1
+  car_id: two
+  carpool_id: two

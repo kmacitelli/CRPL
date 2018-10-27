@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @user.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @user.lname %>
+</p>
+
+<p>
+  <strong>Homeadr:</strong>
+  <%= @user.homeAdr %>
+</p>
+
+<p>
+  <strong>Destadr:</strong>
+  <%= @user.destAdr %>
+</p>
+
+<p>
+  <strong>Maxdist:</strong>
+  <%= @user.maxDist %>
+</p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @user.car_id %>
+</p>
+
+<p>
+  <strong>Carpool:</strong>
+  <%= @user.carpool_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

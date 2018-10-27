@@ -1,0 +1,2 @@
+class Carpool < ApplicationRecord
+end
