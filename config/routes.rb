@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
   get 'find_pool/new'
   get 'find_pool/create'
+  get 'find_pool', to: 'find_pool#find'
   get 'sessions/create'
   get 'sessions/destroy'
   resources :users
   resources :cars
   resources :carpools
+
 
 
   get 'auth/:provider/callback', to: 'sessions#create'
