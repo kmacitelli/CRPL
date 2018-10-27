@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'find_pool/new'
+  get 'find_pool/create'
   get 'sessions/create'
   get 'sessions/destroy'
   resources :users
