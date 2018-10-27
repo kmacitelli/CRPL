@@ -24,3 +24,14 @@
     margin: 10px;
     padding-bottom: 10px;
 }
+
+.centeredContainer div
+{
+    text-align: center;
+    display: inline;
+}
+
+.loginHalf form input
+{
+    display: block;
+}
