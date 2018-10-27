@@ -4,36 +4,6 @@
 
 <%= link_to 'Back', users_path %>
 
-<%# This is the main application page.%>
-<!DOCTYPE html>
-<html>
-
-  <head>
-  
-    <title>CRPL</title>  
-    
-    <%# Meta tags that are found in most regular HTML files %>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    
-    <%# Linking the javascript and CSS files %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
- 
-  </head>
-
-  <body>
-
-    <nav>
-    
-      
-    </nav>
-
-    <%= yield %>
-
-  </body>
-
-</html>
 
 
 

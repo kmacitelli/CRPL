@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ .singleSettingContainer form, .singleSettingContainer button
+ {
+     display: inline;
+ }
+
+.singleSettingContainer
+{
+    margin: 10px;
+    padding-bottom: 10px;
+}
