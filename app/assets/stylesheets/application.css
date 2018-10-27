@@ -24,3 +24,15 @@
     margin: 10px;
     padding-bottom: 10px;
 }
+
+.centeredContainer div
+{
+    text-align: center;
+    display: inline;
+}
+
+#signInToGoogle
+{
+    text-align: right;
+    margin-right: 5px;
+}
