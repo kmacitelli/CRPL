@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_27_170854) do
+ActiveRecord::Schema.define(version: 2018_10_27_181117) do
 
   create_table "carpools", force: :cascade do |t|
     t.string "name"
@@ -21,12 +21,12 @@ ActiveRecord::Schema.define(version: 2018_10_27_170854) do
   create_table "cars", force: :cascade do |t|
     t.string "color"
     t.string "model"
-    t.integer "user_id_id"
-    t.integer "carpool_id_id"
+    t.integer "user_id"
+    t.integer "carpool_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["carpool_id_id"], name: "index_cars_on_carpool_id_id"
-    t.index ["user_id_id"], name: "index_cars_on_user_id_id"
+    t.index ["carpool_id"], name: "index_cars_on_carpool_id"
+    t.index ["user_id"], name: "index_cars_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2018_10_27_170854) do
     t.string "homeAdr"
     t.string "destAdr"
     t.integer "maxDist"
-    t.integer "car_id_id"
-    t.integer "carpool_id_id"
+    t.integer "car_id"
+    t.integer "carpool_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "provider"
@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 2018_10_27_170854) do
     t.string "name"
     t.string "oauth_token"
     t.datetime "oauth_expires_at"
-    t.index ["car_id_id"], name: "index_users_on_car_id_id"
-    t.index ["carpool_id_id"], name: "index_users_on_carpool_id_id"
+    t.index ["car_id"], name: "index_users_on_car_id"
+    t.index ["carpool_id"], name: "index_users_on_carpool_id"
   end
 
 end

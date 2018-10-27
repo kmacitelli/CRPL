@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  belongs_to :car_id
-  belongs_to :carpool_id
+  #belongs_to :car_id, foreign_key: 'car_id', optional: true
+  #belongs_to :carpool_id, foreign_key: 'carpool_id', optional: true
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
@@ -12,5 +12,5 @@ class User < ApplicationRecord
       user.save!
     end
   end
-  
+
 end
